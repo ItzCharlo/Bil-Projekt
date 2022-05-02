@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Car.cs" />
     <Compile Include="MyColorEnum.cs" />
+    <Compile Include="MyComparer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

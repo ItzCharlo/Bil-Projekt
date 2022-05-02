@@ -25,10 +25,11 @@ namespace Bil_Projekt
         }
 
         public Car (string brand, string model, MyColorEnum color, int top, double weight, int hp)
+            : this(brand, model, color)
         {
-            _Brand = brand;
-            _Model = model;
-            _Color = color;
+            //_Brand = brand;
+            //_Model = model;
+            //_Color = color;
             _Topspeed = top;
             _Weight = weight;
             _HP = hp;
@@ -79,7 +80,7 @@ namespace Bil_Projekt
 
         public override string ToString()
         {
-            return String.Format("Brand : {0,-8}, Model: {1,-8}, Color: {2,-8}, TopSpeed: {3,-8}, Weight: {4,-8}, HP: {5,-8}", this.brand, this.model, this.color, this.topspeed, this.weight, this.hp, GetAcceleration());
+            return String.Format("Brand : {0,-8}, Model: {1,-8}, Color: {2,-8}, TopSpeed: {3,-8}, Weight: {4,-8}, HP: {5,-8}, 0-100: {6,-8}", this.brand, this.model, this.color, this.topspeed, this.weight, this.hp, GetAcceleration());
         }
     }
 }
