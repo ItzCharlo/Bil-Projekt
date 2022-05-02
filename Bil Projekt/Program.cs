@@ -10,7 +10,7 @@ namespace Bil_Projekt
     {
         static void Main(string[] args)
         {
-            Car car1 = new Car("Mercedes", " AMG", MyColorEnum.black, 450, 1800, 330);
+            Car car1 = new Car("Mercedes", "AMG", MyColorEnum.black, 450, 1800, 330);
             Console.WriteLine(car1.ToString());
             Car car2 = new Car("tesla", "Model 3", MyColorEnum.Blue);
             car2.topspeed = 500;

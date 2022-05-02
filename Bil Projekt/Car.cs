@@ -24,7 +24,7 @@ namespace Bil_Projekt
             _Color = color;
         }
 
-        public Car (string brand, string model, MyColorEnum color, int top, int weight, int hp)
+        public Car (string brand, string model, MyColorEnum color, int top, double weight, int hp)
         {
             _Brand = brand;
             _Model = model;
