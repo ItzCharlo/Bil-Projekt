@@ -30,7 +30,7 @@ namespace Bil_Projekt
             Console.WriteLine(car3);
 
             Console.WriteLine(":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::");
-            Console.WriteLine("Sorteret");
+            Console.WriteLine("Sorteret af Acceleration");
 
             Car[] cars = new Car[3];
             cars[0] = car1;
@@ -44,6 +44,72 @@ namespace Bil_Projekt
             foreach (Car car in cars)
             {
                 Console.WriteLine(car);
+            }
+
+            //MyCompareBrand compBrand = new MyCompareBrand();
+            //int Result = compBrand.Compare(cars[2], cars[3]);
+
+            //Array.Sort(cars, compBrand);
+            //Console.WriteLine("\nSorted Cars on Brand:");
+            //foreach (Car c in cars)
+            //{
+            //    Console.WriteLine(c);
+            //}
+
+            Console.WriteLine(":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::");
+
+            //MyCompareTopSpeed compTopSpeed = new MyCompareTopSpeed();
+            //Array.Sort(cars, compTopSpeed);
+            //Console.WriteLine("\nSorteret Cars on TopSpeed:");
+            //foreach (Car c in cars)
+            //{
+            //    Console.WriteLine(c);
+            //}
+
+            //Console.WriteLine("Sortert af Brand");
+
+            //CompareAll compbrand = new CompareAll("Brand");
+            //Array.Sort(cars, compbrand);
+            //foreach  (Car c in cars)
+            //{
+            //    Console.WriteLine(c);
+            //}
+            //Console.WriteLine(":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::");
+            //Console.WriteLine(" sorteret af TopSpeed");
+
+            //CompareAll comptop = new CompareAll("TopSpeed");
+            //Array.Sort(cars, comptop);
+            //foreach (Car c in cars)
+            //{
+            //    Console.WriteLine(c);
+            //}
+
+            //Console.WriteLine(":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::");
+            //Console.WriteLine("Accelerate");
+
+            //CompareAll compacc = new CompareAll("Accelerate");
+            //Array.Sort(cars, compacc);
+            //foreach (Car c in cars)
+            //{
+            //    Console.WriteLine(c);
+            //}
+
+            CompareAll cmpBrand = new CompareAll(CarSortEnum.Brand);
+            Array.Sort(cars, cmpBrand);
+            Console.WriteLine("\nSorted Cars on Brand:");
+            foreach (Car c in cars)
+            {
+                Console.WriteLine(c);
+            }
+
+            Console.WriteLine(":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::");
+
+            CompareAll cmpTopSpeed = new CompareAll(CarSortEnum.TopSpeed);
+            Array.Sort(cars, cmpTopSpeed);
+            Console.WriteLine("\nSorted Cars on TopSpeed:");
+            foreach (Car c in cars)
+            {
+                Console.WriteLine(c);
             }
 
             Console.ReadLine();

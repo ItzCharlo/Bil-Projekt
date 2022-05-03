@@ -27,4 +27,19 @@ namespace Bil_Projekt
                 return 0;
         }
     }
+    public class MyCompareBrand : IComparer
+    {
+        public int Compare(object car1, object car2)
+        {
+            return ((Car)car1).brand.CompareTo(((Car)car2).brand);
+        }
+    }
+
+    internal class MyCompareTopSpeed : IComparer
+    {
+        public int Compare(object car1, object car2)
+        {
+            return ((Car)car1).topspeed - ((Car)car2).topspeed;
+        }
+    }
 }
